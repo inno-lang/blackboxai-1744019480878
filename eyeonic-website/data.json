@@ -1,0 +1,132 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "brand": "Ray-Ban",
+      "category": "sunglasses",
+      "name": "Wayfarer Classic",
+      "price": 149.99,
+      "image": "https://images.pexels.com/photos/19090/pexels-photo.jpg",
+      "summary": "Iconic rectangular frame with timeless design",
+      "features": [
+        "100% UV protection",
+        "Polycarbonate lenses",
+        "Classic black frame",
+        "Unisex design"
+      ],
+      "specs_url": "docs/rayban-wayfarer.docx"
+    },
+    {
+      "id": 2,
+      "brand": "Oakley",
+      "category": "sunglasses",
+      "name": "Holbrook",
+      "price": 179.99,
+      "image": "https://images.pexels.com/photos/1124465/pexels-photo-1124465.jpeg",
+      "summary": "Sporty and durable with O-Matter frame",
+      "features": [
+        "Plutonite lenses",
+        "Impact resistant",
+        "Lightweight frame",
+        "Hydrophobic coating"
+      ],
+      "specs_url": "docs/oakley-holbrook.docx"
+    },
+    {
+      "id": 3,
+      "brand": "Gucci",
+      "category": "sunglasses",
+      "name": "GG0397S",
+      "price": 399.99,
+      "image": "https://images.pexels.com/photos/2536965/pexels-photo-2536965.jpeg",
+      "summary": "Luxury acetate frame with gold accents",
+      "features": [
+        "Crystal lenses",
+        "100% UV protection",
+        "Interlocking G detail",
+        "Made in Italy"
+      ],
+      "specs_url": "docs/gucci-gg0397s.docx"
+    },
+    {
+      "id": 4,
+      "brand": "Prada",
+      "category": "sunglasses",
+      "name": "PR 16WS",
+      "price": 349.99,
+      "image": "https://images.pexels.com/photos/36886/sunglasses-glasses-eyewear-black.jpg",
+      "summary": "Oversized square frame with logo detailing",
+      "features": [
+        "Mirrored lenses",
+        "Acetate frame",
+        "Prada logo on temples",
+        "UV400 protection"
+      ],
+      "specs_url": "docs/prada-pr16ws.docx"
+    },
+    {
+      "id": 5,
+      "brand": "Acuvue",
+      "category": "contacts",
+      "name": "Oasys 1-Day",
+      "price": 79.99,
+      "image": "https://images.pexels.com/photos/4145354/pexels-photo-4145354.jpeg",
+      "summary": "Daily disposable lenses for all-day comfort",
+      "features": [
+        "30 lenses per box",
+        "HydraLuxe technology",
+        "UV blocking",
+        "Breathable silicone hydrogel"
+      ],
+      "specs_url": "docs/acuvue-oasys.docx"
+    },
+    {
+      "id": 6,
+      "brand": "Air Optix",
+      "category": "contacts",
+      "name": "Colors",
+      "price": 89.99,
+      "image": "https://images.pexels.com/photos/4145356/pexels-photo-4145356.jpeg",
+      "summary": "Color-enhancing monthly lenses",
+      "features": [
+        "6 lenses per box",
+        "3-in-1 color technology",
+        "Monthly replacement",
+        "High oxygen permeability"
+      ],
+      "specs_url": "docs/airoptix-colors.docx"
+    },
+    {
+      "id": 7,
+      "brand": "Ray-Ban",
+      "category": "frames",
+      "name": "Clubmaster",
+      "price": 159.99,
+      "image": "https://images.pexels.com/photos/1336873/pexels-photo-1336873.jpeg",
+      "summary": "Browline frame with metal accents",
+      "features": [
+        "Acetate front",
+        "Metal temples",
+        "Available in multiple colors",
+        "Unisex design"
+      ],
+      "specs_url": "docs/rayban-clubmaster.docx"
+    },
+    {
+      "id": 8,
+      "brand": "Oakley",
+      "category": "frames",
+      "name": "Flak 2.0 XL",
+      "price": 199.99,
+      "image": "https://images.pexels.com/photos/1336875/pexels-photo-1336875.jpeg",
+      "summary": "Performance frames for active lifestyles",
+      "features": [
+        "O-Matter frame",
+        "Unobtainium earsocks",
+        "Lightweight design",
+        "Impact resistant"
+      ],
+      "specs_url": "docs/oakley-flak.docx"
+    }
+  ]
+}
