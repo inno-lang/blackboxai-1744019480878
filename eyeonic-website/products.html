@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products - Eyeonic</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+        .product-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Header/Navigation -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="flex items-center space-x-2">
+                <i class="fas fa-glasses text-2xl text-blue-600"></i>
+                <span class="text-xl font-bold text-gray-800">Eyeonic</span>
+            </div>
+            <nav class="hidden md:flex space-x-8">
+                <a href="index.html" class="text-gray-600 hover:text-blue-600">Home</a>
+                <a href="products.html" class="text-blue-600 font-medium">Products</a>
+                <a href="compare.html" class="text-gray-600 hover:text-blue-600">Compare</a>
+                <a href="contact.html" class="text-gray-600 hover:text-blue-600">Contact</a>
+            </nav>
+            <button class="md:hidden text-gray-600">
+                <i class="fas fa-bars text-xl"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Product Filter Section -->
+    <section class="py-8 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center mb-6">
+                <h1 class="text-2xl font-bold mb-4 md:mb-0">Our Products</h1>
+                <div class="flex space-x-4">
+                    <div class="relative">
+                        <select id="brandFilter" class="appearance-none bg-gray-100 border-0 px-4 py-2 pr-8 rounded-full focus:outline-none focus:ring-2 focus:ring-blue-500">
+                            <option value="">All Brands</option>
+                            <option value="ray-ban">Ray-Ban</option>
+                            <option value="oakley">Oakley</option>
+                            <option value="gucci">Gucci</option>
+                            <option value="prada">Prada</option>
+                        </select>
+                        <i class="fas fa-chevron-down absolute right-3 top-3 text-gray-500"></i>
+                    </div>
+                    <div class="relative">
+                        <select id="categoryFilter" class="appearance-none bg-gray-100 border-0 px-4 py-2 pr-8 rounded-full focus:outline-none focus:ring-2 focus:ring-blue-500">
+                            <option value="">All Categories</option>
+                            <option value="sunglasses">Sunglasses</option>
+                            <option value="contacts">Contact Lenses</option>
+                            <option value="frames">Frames</option>
+                        </select>
+                        <i class="fas fa-chevron-down absolute right-3 top-3 text-gray-500"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Grid -->
+    <section class="py-8 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div id="productGrid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Product cards will be dynamically loaded here -->
+            </div>
+            <div id="loading" class="text-center py-8">
+                <i class="fas fa-spinner fa-spin text-2xl text-blue-600"></i>
+                <p class="mt-2">Loading products...</p>
+            </div>
+            <div id="noResults" class="hidden text-center py-12">
+                <i class="fas fa-search text-4xl text-gray-400 mb-4"></i>
+                <h3 class="text-xl font-medium">No products found</h3>
+                <p class="text-gray-600 mt-2">Try adjusting your filters</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Eyeonic</h3>
+                    <p class="text-gray-400">Premium eyewear for every vision need.</p>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Quick Links</h4>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-gray-400 hover:text-white">Home</a></li>
+                        <li><a href="products.html" class="text-gray-400 hover:text-white">Products</a></li>
+                        <li><a href="compare.html" class="text-gray-400 hover:text-white">Compare</a></li>
+                        <li><a href="contact.html" class="text-gray-400 hover:text-white">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Customer Service</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white">FAQs</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Shipping Policy</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Returns & Exchanges</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-4">Connect With Us</h4>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2023 Eyeonic. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Product Detail Modal -->
+    <div id="productModal" class="fixed inset-0 bg-black bg-opacity-50 z-50 hidden flex items-center justify-center p-4">
+        <div class="bg-white rounded-lg max-w-4xl w-full max-h-[90vh] overflow-y-auto">
+            <div class="p-6">
+                <div class="flex justify-between items-start">
+                    <h2 id="modalTitle" class="text-2xl font-bold"></h2>
+                    <button id="closeModal" class="text-gray-500 hover:text-gray-700">
+                        <i class="fas fa-times"></i>
+                    </button>
+                </div>
+                <div class="grid md:grid-cols-2 gap-8 mt-6">
+                    <div>
+                        <img id="modalImage" src="" alt="" class="w-full rounded-lg">
+                    </div>
+                    <div>
+                        <div id="modalDetails" class="space-y-4"></div>
+                        <div class="mt-6">
+                            <a id="specsLink" href="#" class="inline-block bg-blue-600 text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition">
+                                <i class="fas fa-download mr-2"></i>Download Full Specs
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="assets/app.js"></script>
+</body>
+</html>
